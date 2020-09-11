@@ -12,3 +12,11 @@ def add_or_remove_cash(petshop, num):
 
 def get_pets_sold(petshop):
     return petshop["admin"]["pets_sold"]
+
+
+def increase_pets_sold(petshop, num):
+    petshop["admin"]["pets_sold"] += num
+
+
+def get_stock_count(petshop):
+    return (len(petshop["pets"]))
