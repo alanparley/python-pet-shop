@@ -20,3 +20,7 @@ def increase_pets_sold(petshop, num):
 
 def get_stock_count(petshop):
     return (len(petshop["pets"]))
+
+
+def get_pets_by_breed(petshop, breed):
+    found_breed = []
