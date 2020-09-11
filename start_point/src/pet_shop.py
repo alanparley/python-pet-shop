@@ -4,3 +4,11 @@ def get_pet_shop_name(petshop):
 
 def get_total_cash(petshop):
     return petshop["admin"]["total_cash"]
+
+
+def add_or_remove_cash(petshop, num):
+    petshop["admin"]["total_cash"] += num
+
+
+def get_pets_sold(petshop):
+    return petshop["admin"]["pets_sold"]
