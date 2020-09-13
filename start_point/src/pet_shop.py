@@ -32,5 +32,5 @@ def get_pets_by_breed(petshop, breed_type):
 
 def find_pet_by_name(petshop, pet_name):
     for name in petshop["pets"]:
-        if name["name"] == "Arthur":
+        if name["name"] == pet_name:
             return name
