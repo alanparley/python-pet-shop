@@ -50,8 +50,8 @@ def get_customer_cash(petshop):
     return petshop["cash"]
 
 
-def remove_customer_cash(petshop, num):
-    petshop["cash"] -= num
+def remove_customer_cash(customer, num):
+    customer["cash"] -= num
 
 
 def get_customer_pet_count(customers):
@@ -60,3 +60,8 @@ def get_customer_pet_count(customers):
 
 def add_pet_to_customer(petshop, add_pet):
     petshop["pets"].append(add_pet)
+
+
+# def customer_can_afford_pet(customer, can_buy_pet):
+#     if can_buy_pet in customer["cash"] >= int(500)
+#     can_buy_pet == True
