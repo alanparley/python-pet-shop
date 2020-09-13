@@ -46,9 +46,13 @@ def add_pet_to_stock(petshop, add_stock):
     petshop["pets"].append(add_stock)
 
 
-def get_customer_cash(customers):
-    return customers["cash"]
+def get_customer_cash(petshop):
+    return petshop["cash"]
 
 
 def remove_customer_cash(petshop, num):
     petshop["cash"] -= num
+
+
+def customer_pet_count(petshop, num):
+    len(petshop["customers"]["pets"])
