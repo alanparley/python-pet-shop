@@ -22,5 +22,23 @@ def get_stock_count(petshop):
     return (len(petshop["pets"]))
 
 
-def get_pets_by_breed(petshop, breed):
-    found_breed = []
+# def get_pets_by_breed(pet_shop, breed_type):
+#     found_breeds = []
+#     for breed_type in pet_shop:
+#         if breed_type["pets"]["British Shorthair"] == True:
+#             found_breeds.append(breed_type)
+#     print(len(found_breeds))
+
+    # def get_pets_by_breed(pet_shop, breed_type):
+    #     found_breeds = []
+    #     for breed_type in pet_shop:
+    #         if breed_type["pets"]["breed"] == "British Shorthair":
+    #             found_breeds.append(breed_type)
+    #     print(len(found_breeds))
+
+def get_pets_by_breed(pet_shop, breed_type):
+    found_breeds = []
+    for breed_type in pet_shop["pets"]["breed"]:
+        if breed_type == "British Shorthair":
+            found_breeds.append(int(breed_type))
+    return found_breeds
