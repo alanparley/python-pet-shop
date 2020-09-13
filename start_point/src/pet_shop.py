@@ -56,3 +56,7 @@ def remove_customer_cash(petshop, num):
 
 def get_customer_pet_count(customers):
     return(len(customers["pets"]))
+
+
+def add_pet_to_customer(petshop, add_pet):
+    petshop["pets"].append(add_pet)
