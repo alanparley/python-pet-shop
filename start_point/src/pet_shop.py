@@ -36,16 +36,27 @@ def find_pet_by_name(petshop, pet_name):
             return name
 
 
-# def remove_pet_by_name(petshop, pet_name):
-#     petshop["pets"]["name"] .remove(pet_name)
-#     return petshop
-
-# def remove_pet_by_name(pet_shop, pet_name):
-#     for pet in pet_shop['pets']:
-#         if pet["name"] == pet_name:
-#             pet_shop.remove["pets"](pet_name)
-
 def remove_pet_by_name(petshop, petname):
     for pet in petshop["pets"]:
         if pet["name"] == petname:
             petshop["pets"].remove(pet)
+
+
+# def add_pet_to_stock(petshop, add_stock):
+#     petshop["pets"] += add_stock
+
+def add_pet_to_stock(petshop, add_stock):
+    petshop["pets"].append(add_stock)
+
+# # add a task to the list
+# def add_to_list(list, task):
+#     list.append(task)
+
+
+# def test_add_or_remove_cash__add(self):
+#         add_or_remove_cash(self.cc_pet_shop, 10)
+#         cash = get_total_cash(self.cc_pet_shop)
+#         self.assertEqual(1010, cash)
+
+# def add_or_remove_cash(petshop, num):
+#     petshop["admin"]["total_cash"] += num
